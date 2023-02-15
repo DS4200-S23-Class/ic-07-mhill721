@@ -31,7 +31,7 @@ FRAME3.selectAll("points")
       .attr("r", 10)
       .attr("class", "point"); 
 
-FRAME3.append("ax") // not working yet
+FRAME3.append("g")
       .attr("transform", "translate(" + MARGINS.left + 
             "," + (VIS_HEIGHT + MARGINS.top) + ")")
       .call(d3.axisBottom(X_SCALE).ticks(4))
